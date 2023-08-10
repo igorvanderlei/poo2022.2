@@ -8,5 +8,8 @@ import br.edu.ufape.poo.mensageiro.negocio.basica.Usuario;
 @Repository
 public interface InterfaceColecaoUsuario 
 	extends JpaRepository<Usuario, Long>{
+	
+	
+	public Usuario findByEmail(String email);
 
 }

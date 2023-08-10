@@ -48,12 +48,13 @@ public class Grupo {
 	}
 	public Grupo() {
 		super();
+		this.membros = new ArrayList<Usuario>();
 	}
 	public Grupo(String nome, Usuario administrador) {
-		super();
+		this();
 		this.nome = nome;
 		this.administrador = administrador;
-		this.membros = new ArrayList<Usuario>();
+		adicionarMembro(administrador);
 	}
 	
 	public void adicionarMembro(Usuario u) {
