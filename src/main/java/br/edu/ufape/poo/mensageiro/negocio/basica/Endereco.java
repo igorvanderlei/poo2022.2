@@ -13,6 +13,12 @@ public class Endereco {
 	
 	private String logradouro;
 	private String bairro;
+	private String uf;
+	private String cep;
+	private String numero;
+	
+	
+	
 	public Endereco(String logradouro, String bairro, String uf, String cep, String numero) {
 		super();
 		this.logradouro = logradouro;
@@ -60,9 +66,7 @@ public class Endereco {
 	public void setNumero(String numero) {
 		this.numero = numero;
 	}
-	private String uf;
-	private String cep;
-	private String numero;
+
 	
 	
 	
